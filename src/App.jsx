@@ -1,13 +1,9 @@
-import React from 'react';
-import { Section } from 'components/Section';
-export class App extends React.Component {
-  state = {};
+import { Section } from 'components/Section/Section';
 
-  render() {
-    return (
-      <div>
-        <Section title=""></Section>
-      </div>
-    );
-  }
+export function App() {
+  return (
+    <div>
+      <Section></Section>
+    </div>
+  );
 }
