@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1812,
+    "user": "Tartaglia",
+    "followers": 111111,
+    "tweets": 101,
+    "avatar": "https://avatarfiles.alphacoders.com/307/thumb-307178.png"
+  },
+  {
+    "id": 1137,
+    "user": "Scaramouche",
+    "followers": 99999,
+    "tweets": 66,
+    "avatar": "https://64.media.tumblr.com/1be7de0c48df46deecb1fe40a3739ce7/fb79e99aa5cf31ac-e5/s400x600/a172ff2d2efbcbd444eced1f80c46b1ec56faed5.pnj"
+  },
+  {
+    "id": 1213,
+    "user": "Kazuha",
+    "followers": 50000,
+    "tweets": 911,
+    "avatar": "https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/characters/kaedehara_kazuha/image.png?strip=all&quality=100&w=160"
+  },
+  {
+    "id": 1714,
+    "user": "Yae Miko",
+    "followers": 1000000,
+    "tweets": 69,
+    "avatar": "https://i2.wp.com/gi-builds.sfo3.digitaloceanspaces.com/characters/yae_miko/image.png?strip=all&quality=100&w=160"
+  }
+]
