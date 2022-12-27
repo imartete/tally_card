@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import './TallyCard.modules.css';
 import { Button } from 'components/Button/Button';
 
@@ -27,3 +27,12 @@ export function TallyCard({
     </li>
   );
 }
+
+TallyCard.propTypes = {
+  user: PropTypes.string.isRequired,
+  tweets: PropTypes.number.isRequired,
+  followers: PropTypes.number.isRequired,
+  avatarULR: PropTypes.string.isRequired,
+  onClick: PropTypes.func.isRequired,
+  isFollowing: PropTypes.bool.isRequired,
+};

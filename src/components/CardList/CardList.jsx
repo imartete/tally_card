@@ -1,4 +1,4 @@
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import { TallyCard } from 'components/TallyCard/TallyCard';
 import './CardList.modules.css';
 
@@ -22,3 +22,17 @@ export function CardList({ users, onClick }) {
     </ul>
   );
 }
+
+CardList.propTypes = {
+  users: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.number.isRequired,
+      isFollowing: PropTypes.bool.isRequired,
+      tweets: PropTypes.number.isRequired,
+      followers: PropTypes.number.isRequired,
+      user: PropTypes.string.isRequired,
+      avatar: PropTypes.string.isRequired,
+    }).isRequired
+  ).isRequired,
+  onClick: PropTypes.func.isRequired,
+};
