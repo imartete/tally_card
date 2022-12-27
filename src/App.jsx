@@ -1,5 +1,5 @@
 import { Section } from 'components/Section/Section';
-import { TallyCard } from 'components/Section/TallyCard/TallyCard';
+import { CardList } from 'components/CardList/CardList';
 import { useState, useEffect } from 'react';
 import accounts from 'data/users.json';
 
@@ -40,23 +40,8 @@ export function App() {
   }
 
   return (
-    <div>
-      <Section>
-        {users.map(user => (
-          <TallyCard
-            key={user.id}
-            id={user.id}
-            buttonText={user.isFollowing ? 'following' : 'follow'}
-            tweets={user.tweets}
-            followers={user.followers}
-            user={user.user}
-            avatarULR={user.avatar}
-            onClick={() => {
-              updateFollowers(user.id);
-            }}
-          />
-        ))}
-      </Section>
-    </div>
+    <Section>
+      <CardList users={users} onClick={updateFollowers} />
+    </Section>
   );
 }
