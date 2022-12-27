@@ -17,22 +17,15 @@ export function App() {
 
   function updateFollowers(id) {
     const newUsers = users.map(account => {
-      if (id === account.id && !account.isFollowing) {
+      if (id === account.id) {
         return {
           ...account,
-          followers: account.followers + 1,
-          isFollowing: true,
+          isFollowing: !account.isFollowing,
+          followers: account.isFollowing
+            ? account.followers - 1
+            : account.followers + 1,
         };
       }
-
-      if (id === account.id && account.isFollowing) {
-        return {
-          ...account,
-          followers: account.followers - 1,
-          isFollowing: false,
-        };
-      }
-
       return account;
     });
 
