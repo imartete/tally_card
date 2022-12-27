@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
 import { TallyCard } from 'components/TallyCard/TallyCard';
 import './CardList.modules.css';
 

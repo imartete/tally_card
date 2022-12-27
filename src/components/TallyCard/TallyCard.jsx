@@ -1,6 +1,5 @@
-import { useState } from 'react';
-import PropTypes from 'prop-types';
-import css from './TallyCard.modules.css';
+// import PropTypes from 'prop-types';
+import './TallyCard.modules.css';
 
 export function TallyCard({
   user,
