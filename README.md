@@ -1,6 +1,6 @@
 # goit-test-task
 
-[GitHub Pages Link] (https://imartete.github.io/tally_card/)
+[GitHub Pages] (https://imartete.github.io/tally_card/)
 
 1. Підготований кастомний файл deploy.yml, який не вимагає підтримування окремої гілки gh-pages.
 2. Реалізований компонент TallyCard, що відображає картку користувача.
