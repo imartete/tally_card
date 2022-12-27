@@ -13,7 +13,7 @@ export function App() {
     if (users !== accounts) {
       localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(users));
     }
-  }, users);
+  }, [users]);
 
   function updateFollowers(id) {
     const newUsers = users.map(account => {
