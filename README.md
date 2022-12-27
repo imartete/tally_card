@@ -1,5 +1,3 @@
-# goit-react-hw-02-feedback
+# goit-test-task
 
-Homework 02
-
-[GitHub Pages](https://imartete.github.io/goit-react-hw-02-feedback/)
+[GitHub Pages](https://imartete.github.io/tally_card/)
