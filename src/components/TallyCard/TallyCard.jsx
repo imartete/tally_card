@@ -1,12 +1,12 @@
 // import PropTypes from 'prop-types';
 import './TallyCard.modules.css';
+import { Button } from 'components/Button/Button';
 
 export function TallyCard({
   user,
   tweets,
   followers,
   avatarULR,
-  buttonText = 'Your text',
   onClick,
   isFollowing,
 }) {
@@ -22,13 +22,7 @@ export function TallyCard({
           <li>{tweets.toLocaleString()} tweets</li>
           <li>{followers.toLocaleString()} followers</li>
         </ul>
-        <button
-          className={isFollowing ? 'following button' : 'notFollowing button'}
-          type="button"
-          onClick={onClick}
-        >
-          {buttonText}
-        </button>
+        <Button isFollowing={isFollowing} onClick={onClick} />
       </div>
     </li>
   );

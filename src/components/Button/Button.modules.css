@@ -1,0 +1,25 @@
+.button {
+  display: block;
+  color: #373737;
+  font-family: inherit;
+  text-transform: inherit;
+  border-radius: 12px;
+  font-size: 20px;
+  font-weight: 500;
+  filter: drop-shadow(-3px, 8px rgba(0, 0, 0, 0.23));
+  padding: 16px 32px;
+  width: 226px;
+  border: none;
+  margin: 0 auto;
+  margin-top: 32px;
+}
+
+.following {
+  composes: button;
+  background-color: #5cd3a8;
+}
+
+.notFollowing {
+  composes: button;
+  background-color: #ebd8ff;
+}
