@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import toNumWithComa from 'utils/toNumWithComa';
 import './TallyCard.modules.css';
 import { Button } from 'components/Button/Button';
 
@@ -19,8 +20,8 @@ export function TallyCard({
       </div>
       <div>
         <ul className="cardMeta">
-          <li>{tweets.toLocaleString()} tweets</li>
-          <li>{followers.toLocaleString()} followers</li>
+          <li>{toNumWithComa(tweets)} tweets</li>
+          <li>{toNumWithComa(followers)} followers</li>
         </ul>
         <Button isFollowing={isFollowing} onClick={onClick} />
       </div>
